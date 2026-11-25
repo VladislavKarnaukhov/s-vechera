@@ -1,0 +1,13 @@
+CREATE TABLE visits (
+  id TEXT PRIMARY KEY,
+  source TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+--> statement-breakpoint
+CREATE TABLE responses (
+  id TEXT PRIMARY KEY,
+  intent TEXT NOT NULL,
+  format TEXT NOT NULL,
+  price INTEGER NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
